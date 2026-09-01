@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevOps HW1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1 id="name">Anush Sargsyan</h1>
+    <p id="date"></p>
+    <p class="hw">DevOps HW1</p>
+  </main>
+
+  <script>
+    const dateEl = document.getElementById('date');
+    const today = new Date();
+    dateEl.textContent = today.toLocaleDateString(undefined, {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    });
+  </script>
+</body>
+</html>
