@@ -10,7 +10,9 @@
   <main class="card">
     <h1 id="name">Anush Sargsyan</h1>
     <p id="date"></p>
+    <p id="time"></p>
     <p class="hw">DevOps HW1</p>
+    <p class="fun">🚀 deployed zero downtime (hopefully)</p>
   </main>
 
   <script>
@@ -21,6 +23,9 @@
       month: 'long',
       day: 'numeric'
     });
+
+    const timeEl = document.getElementById('time');
+    timeEl.textContent = today.toLocaleTimeString();
   </script>
 </body>
 </html>
